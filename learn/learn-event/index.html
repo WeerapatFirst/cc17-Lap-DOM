@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- <form action="https://google.com/loging" method="" enctype="">
+    <label for="">email</label>
+    <input type="text" placeholder="Enter your email">
+    <label for="">Password</label>
+    <input type="text" placeholder="Enter your password">
+    <button>Login</button>
+  </form> -->
+
+  <!-- <button onclick="alert('สวัสดีจ้า')">Click</button> -->
+
+  <!-- <button>Click</button>
+  <ul>
+    <li data-name="A">A</li>
+    <li data-name="B">B</li>
+    <li data-name="C">C</li>
+    <li data-name="D">D</li>
+    <li data-name="E">E</li>
+  </ul> -->
+
+  <!-- <input type="text" placeholder="กรอกด้วยนะ"  /> -->
+
+  <!-- <a href="https://google.com">Go to Google</a> -->
+
+  <!-- <div style="background-color: blueviolet; width: 600px; height: 600px;" id="outer">
+
+    <div style="background-color: yellow; width: 400px; height: 400px;" id="middle">
+
+      <div style="background-color: pink; width: 200px; height: 200px;" id="inner"></div>
+
+    </div>
+  </div> -->
+  <img src="https://img.freepik.com/free-photo/abstract-glowing-flame-drops-electric-illumination-generative-ai_188544-8092.jpg" alt="">
+  <input type="file" multiple hidden />
+
+  <script>
+
+    const input1 = document.querySelector('input');
+    const img = document.querySelector('img');
+    img.addEventListener('click', function() {
+      input.click();
+    })
+
+    // outer.addEventListener('click', function() {
+    //   console.log('Click outer')
+    // })
+    // middle.addEventListener('click', function(event) {
+    //   event.stopPropagation();
+    //   console.log('Click middle')
+    // })
+    // inner.addEventListener('click', function() {
+    //   console.log('Click inner')
+    // })
+
+
+    const atag = document.querySelector('a');
+    // atag.addEventListener('click', function(event) {
+    //   event.preventDefault();
+    //   alert('ไปไม่ได้จ้า')
+    // });
+
+    const form = document.querySelector('form');
+    // form.addEventListener('submit', function(event) {
+    //   event.preventDefault();
+    //   alert('สวัสดี')
+    //   // validarte if all input valid
+    //   // all coorect => submit form
+    //   form.submit();
+    //   // something incorrect => show error message to user
+    // });
+
+
+    const button1 = document.querySelector('button');
+
+    // button1.addEventListener('click', function(event) {
+    //   console.log(event);
+    // })
+
+      const input = document.querySelector('input');
+      // input.addEventListener('keydown', function(event) {
+      //   console.log(event);
+      //   if(event.key !== event.key.toUpperCase() && 
+      //     event.key !== 'Backspace');
+      //     {
+      //       event.preventDefault();
+      //     }
+       
+      // })
+      // input.addEventListener('input', function(event) {
+        // console.log('input changed');
+        // console.log(event.target.value);
+        // console.log(event.currentTarget);
+      // });
+
+    // button1.addEventListener('mousedown', function(event) {
+    //   console.log(event);
+    // })
+
+    // document.body.addEventListener('click', function(event) {
+    //   // console.log(event);
+    //   // console.log(event.target);
+    //   console.log(event.target.value);
+    // })
+
+    const list = document.querySelectorAll('li')
+
+    // for(let li of list) {
+    //   li.addEventListener('click', function() {
+    //     console.log(li.innerHTML);
+    //   })
+    // }
+
+
+    const button = document.querySelector('button');
+    // ### Ex2
+    // button.onclick = function() {
+    //   alert('Click')
+    // }
+    // button.onclick = (() => {
+    //   alert('Click')
+    // })
+
+    // ### Ex3
+    // button.addEventListener('click', function() {
+    //   alert('Click');
+    // });
+
+    // ### Ex4
+    function Click1() {
+      alert('Click_1');
+    }
+    function Click2() {
+      alert('Click_2');
+    }
+    // button.addEventListener('click', function() {
+    //   Click1();
+    //   Click2();
+    // });
+
+    // button.addEventListener('click', Click1);
+    // button.addEventListener('click', Click2);
+
+    // setTimeout(() => {
+    //   button.removeEventListener('click', Click1);
+    // }, 5000);
+
+    // document.addEventListener('click', function() {
+    //   alert('Click somehere');
+    // })
+
+      // button.addEventListener('click', Click1);
+
+      // setTimeout(() => button.removeEventListener('click', Click1), 5000);
+
+      // button.addEventListener('click', function() {
+      //   console.log(this);
+      // })
+
+      // document.body.addEventListener('click', function() {
+      //   console.log(this);
+      // })
+  </script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <input type="text">
+  <button id="add">Add</button>
+
+  <script>
+
+    const text = document.querySelector('input')
+    const add = document.querySelector('#add')
+    const body = document.querySelector('body')
+
+
+    add.addEventListener('click', function() {
+
+      const container = document.createElement('div')
+      body.append(container)
+
+      const task = document.createElement('h1')
+      task.textContent = text.value
+
+      const edit = document.createElement('button')
+      edit.textContent = 'Edit'
+
+      const del = document.createElement('button')
+      del.textContent = 'Del'
+
+      container.append(task)
+      container.append(edit)
+      container.append(del)
+
+      edit.addEventListener('click', function() {
+        // console.log(edit)
+        task.textContent = prompt('input')
+        
+        // task.innerText += prompt('input')
+        // task.innerHTML += `<button> ${prompt("xdfghhfg")}</button>`
+      });
+
+      text.value = '';
+
+      del.addEventListener('click', function() {
+        container.remove();
+      })
+    });    
+
+  </script>
+
+</body>
+</html>

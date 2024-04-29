@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .color {
+      background-color: red;
+    }
+  </style>
+</head>
+<body>
+  <button id="btn" class="btn">Submit</button>
+
+  <script>
+  
+      const button = document.getElementById("btn");
+
+      setTimeout(() => {
+        button.classList.add("color");}, 3000);
+
+      setTimeout(() => {
+        button.classList.remove("color");}, 6000);
+
+
+        // const button = document.querySelector('.btn');
+
+        // setTimeout(() => {button.style.backgroundColor = 'blue'}, 3000);
+        // const button1 = button.style.backgroundColor
+        // setTimeout(() => {button.remove(button1)}, 6000)
+    
+    
+  </script>
+</body>
+</html>

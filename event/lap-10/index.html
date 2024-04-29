@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- 
+จงสร้าง Label และ Select ดังรูป
+เมื่อ click <select> ของ Province ให้แสดงรายชื่อจังหวัด
+เมื่อ click <select> ของ District ให้แสดงอำเภอของจังหวัดที่ถูกเลือก -->
+
+  <label>Province : </label>
+  <select id="province" onchange="giveSelection(this.value)">
+    <option value="A">A</option>
+    <option value="B">B</option>
+  </select><br>
+  <label>District : </label>
+  
+  <select id="district">  
+    <option data-option="A">A1</option>
+    <option data-option="A">A2</option>
+    <option data-option="A">A3</option>
+    <option data-option="A">A4</option>
+    <option data-option="B">B1</option>
+    <option data-option="B">B2</option>
+    <option data-option="B">B3</option>
+    <option data-option="B">B4</option>
+  </select>
+  
+  <script>
+    const province = document.querySelector('#province')
+    const district = document.querySelector('#district')
+    const option2 = district.querySelectorAll('option')
+    function giveSelection(selectionValue) {
+      district.innerHTML = ''
+      for (let i = 0; i < option2.length; i++) {
+        if(option2[i].dataset.option === selectionValue) {
+          district.appendChild(option2[i])
+        }
+      }
+    }
+  giveSelection(province.value)
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <ul></ul>
+
+  <script>
+
+    // ####### EX
+    const ul = document.createElement("ul"); // <ul></ul>
+    let test = prompt("กรอกข้อความ"); // string | null
+    while(!(test === null || test.trim() === "")) {
+      const li = document.createElement("li"); // li
+      li.textContent = test // <li> user input </li>
+      ul.append(li); // <ul> <li> user input </li> </ul>
+      test = prompt("กรอกข้อความ");
+    }
+    while(1){
+      const test = prompt("กรอกข้อความ");
+      if (test === null || test.trim() === "") break;
+      const li = document.createElement("li");
+      li.textContent = test;
+      ul.append(li);
+    }
+
+    document.body.prepend(ul);
+
+
+    // const ul = document.querySelector("ul")
+
+    // for(let i = 0; i < 5; i++) {
+    //   const test = prompt("กรอกข้อความ")
+    //   const li = document.createElement("li")
+    //   li.innerHTML = test
+    //   const add = ul.append(li)
+    // }
+    // aledsrt(test)
+  </script>
+</body>
+</html>
